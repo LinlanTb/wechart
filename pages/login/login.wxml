@@ -1,0 +1,32 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <view class="box">
+      <input placeholder="请输入账户" bindblur="nameBlur"/>
+    </view>
+    <view class="box">
+      <input placeholder="请输入密码" bindblur="passBlur"/>
+    </view>
+    <view class="showpwd">
+      <checkbox-group bindchange="checkboxChange">
+        <label class="checkbox" wx:for="{{showItems}}">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+          <view class="showpwdtext">{{item.value}}</view>
+        </label>
+        <navigator url="#" hover-class="navigator-hover" class="forgetpwd">忘记密码？</navigator>
+    </checkbox-group>
+    </view>
+    <view class="rempwd">
+      <checkbox-group bindchange="checkboxChange">
+        <label class="checkbox" wx:for="{{remItems}}">
+          <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+          <view class="showpwdtext">{{item.value}}</view>
+        </label>
+      </checkbox-group>
+    </view>
+    <view class="login">
+       <button type="default"loading="{{loading}}"hover-class="other-button-hover" bindtap="userLogin">登录</button>
+    </view>
+    <view class="toregister">
+       <button type="default"loading="{{loading}}"hover-class="other-button-hover" bindtap="toRegister">注册</button>
+    </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/shopdata/shopdata.wxss */
+.container{
+  box-sizing: border-box;
+  padding:20rpx 50rpx;
+  width:100%;
+  overflow:hidden;
+}
+.imgBOx{
+  width:600rpx;
+}
+.imgBox image{
+  width:630rpx;
+  height:500rpx;
+  display:block;
+}

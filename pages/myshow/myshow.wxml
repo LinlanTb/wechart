@@ -1,0 +1,31 @@
+<!--pages/myshow/myshow.wxml-->
+<view class="container">
+    <view class="person">
+        <image src="{{imgPath}}"  bindtap="takephoto"></image>
+        <view class="synopsis">
+          <text>昵称：未知</text>
+          <text>余额： <text class="money">0</text></text>
+        </view>
+    </view>
+    <view class="item">
+      <view class="list">我的订单
+        <image src="../../img/go.png"></image>
+      </view>
+      <view class="list">我的优惠券
+        <image src="../../img/go.png"></image>
+      </view>
+      <view class="list">浏览记录
+        <image src="../../img/go.png"></image>
+      </view>
+      <view class="list last">我的收藏
+        <image src="../../img/go.png"></image>
+      </view>
+    </view>
+    <view class="alertk"  wx:if="{{isShow}}">
+        <text class="choose">选择操作</text>
+        <view class="phone">
+            <image src="../../img/camera.png" bindtap="usecamera"></image>
+             <image src="../../img/picture.png" bindtap="usegallery"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view class="container">
+    <view class="head">
+      <text class="number">商品数量：<text class="">2</text></text>
+      <text class="totalmon">应付金额(不含运费)：<text class="mon">￥123</text></text>
+    </view>
+    <view class="cartlist">
+      <image src="../../img/a.png"></image>
+      <view class="txt">
+        <text class="goodet">建行卡都是风景看</text>
+        <text class="goodet">T膤</text>
+        <text class="goodet">单价：<text class="pri">￥199</text></text>
+        <view class="goodet martop">数量：
+          <button  type="default" class="minus">-</button>
+          <input type="text" value="{{goodsnum}}"class="inpnum" />
+          <button  type="default" class="plus">+</button>
+        </view>
+      </view>
+    </view>
+    
+</view>

@@ -1,0 +1,18 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+    <view class="box">
+      <text>账户名称 : </text>
+      <input placeholder="请输入账户" bindblur="userNamev"/>
+    </view>
+    <view class="box">
+      <text>登录密码 : </text>
+      <input placeholder="请输入密码" bindblur="userPwd" />
+    </view>
+    <view class="box">
+      <text>确认密码 : </text>
+      <input placeholder="请输入密码" bindblur="surePwd" />
+    </view>
+    <view class="register">
+       <button type="default" hover-class="other-button-hover" bindtap="regis">确定注册</button>
+    </view>
+</view>

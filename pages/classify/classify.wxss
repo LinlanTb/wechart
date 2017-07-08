@@ -1,0 +1,56 @@
+/* pages/classify/classify.wxss */
+.container{
+  padding:0;
+}
+.classifyBox{
+  height:70rpx;
+ overflow:hidden;
+ background:#9a9fa5;
+}
+.classifyBox .classifyItem{
+  width:70rpx;
+  height:70rpx;
+  display: inline-block;
+  box-sizing: border-box;
+  padding:7rpx;
+}
+.classifyBox .classifyItem image{
+  width:55rpx;
+  height:55rpx;
+}
+.goodsbox{
+  overflow:hidden;
+}
+.goodlist{
+  box-sizing: border-box;
+  width:50%;
+  padding:40rpx;
+  float:left;
+}
+.goodlist image{
+  width:100%;
+  height:280rpx;
+  border:1rpx solid #c7c7c9;
+}
+.goodlist .goodname{
+  width:300rpx;
+  height:100rpx;
+  display:block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height:100rpx;
+  text-align: center;
+}
+.goodlist .goodpri{
+  overflow:hidden;
+}
+.goodlist .newpri{
+  float:left;
+  color:#d31112;
+}
+.goodlist .oldpri{
+  float:right;
+  color:#878787;
+  text-decoration: line-through;
+}

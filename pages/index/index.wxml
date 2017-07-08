@@ -1,0 +1,3 @@
+<view class="section">
+    <navigator url="/pages/login/login?title=login" hover-class="navigator-hover">跳转到新页面</navigator>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/shopdata/shopdata.wxml-->
+<view class="container">
+  <view class="imgBox" wx:for = "{{goodImgs}}">
+    <image src="{{item}}"></image>
+  </view>
+  <view class="detailtxt">
+    <text>{{goodsinfo.detail}}</text>
+  </view>
+</view>

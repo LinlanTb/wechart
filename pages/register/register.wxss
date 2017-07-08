@@ -1,0 +1,36 @@
+/* pages/register/register.wxss */
+page{
+   background:#f3eff0;
+}
+page .container{
+  padding-top:100rpx;
+}
+.container .box{
+  background:#fff;
+  width:650rpx;
+  height:100rpx;
+  margin-bottom:20rpx;
+  line-height:100rpx;
+  padding-left:20rpx;
+  border-radius:10rpx;
+}
+.container .box input{
+  height:100rpx;
+  float:left;
+}
+.container .box text{
+  float:left;
+}
+.container .register{
+  width:650rpx;
+  height:100rpx;
+  margin-top:100rpx;
+}
+.container .register button{
+  width:650rpx;
+  height:90rpx;
+  background:#d5090a;
+  color:#fff;
+  letter-spacing: 10rpx;
+  line-height:90rpx;
+}

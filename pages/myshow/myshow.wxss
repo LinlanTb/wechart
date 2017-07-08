@@ -1,0 +1,89 @@
+/* pages/myshow/myshow.wxss */
+.container{
+  padding:50rpx;
+   box-sizing: border-box;
+   width:100%;
+   position:relative;
+}
+.person{
+  width:100%;
+  height:300rpx;
+  overflow:hidden;
+  margin-top:60rpx;
+}
+.person image{
+  float:left;
+  width:200rpx;
+  height:200rpx;
+}
+.person .synopsis{
+   width:400rpx;
+   height:200rpx;
+   float:left;
+}
+.synopsis text{
+  display:block;
+  line-height:100rpx;
+  height:100rpx;
+  margin-left:50rpx;
+}
+.synopsis .money{
+  display:inline-block;
+  color:#f00;
+  margin-left:10rpx;
+}
+.item{
+  width:600rpx;
+  height:400rpx;
+  border:1rpx solid #dedede;
+  margin-top:30rpx;
+  border-radius:10rpx;
+}
+.list{
+  width:600rpx;
+  height:100rpx;
+  padding:0 30rpx;
+  line-height:100rpx;
+  box-sizing:border-box;
+  border-bottom:1rpx solid #dedede;
+  position:relative;
+}
+.last{
+  border:none;
+}
+.list image{
+  width:25rpx;
+  height:50rpx;
+  position:absolute;
+  top:25rpx;
+  right:25rpx;
+}
+.alertk{
+  width:600rpx;
+  height:500rpx;
+  position:absolute;
+  top:200rpx;
+  border:2rpx solid #494949;
+  border-radius: 26rpx;
+  background:#e8e8e8;
+}
+.choose{
+  width:460rpx;
+  height:100rpx;
+  text-align: center;
+  display:block;
+  border-bottom:1rpx solid #000;
+  margin: 0 auto;
+  line-height:100rpx;
+  color:#666;
+}
+.phone{
+  width:460rpx;
+  height:300rpx;
+  margin:0 auto;
+}
+.phone image{
+  width:200rpx;
+  height:200rpx;
+  margin:50rpx 15rpx;
+}

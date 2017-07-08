@@ -1,0 +1,56 @@
+<!--pages/classify/classify.wxml-->
+<view class="container">
+    <scroll-view scroll-x="true" class="classifyBox" style=" white-space: nowrap; display: flex">
+      <view class="classifyItem">
+        <image src="../../img/tshirt.png"></image>
+      </view>
+      <view  class="classifyItem">
+        <image src="../../img/shirt.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/canonicals.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/casual.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/furs.png"></image>
+      </view>
+      <view  class="classifyItem">
+        <image src="../../img/cotton.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/hoodie.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/jean.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/pants.png"></image>
+      </view>
+      <view  class="classifyItem">
+        <image src="../../img/sweater.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/underware.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/windware.png"></image>
+      </view>
+      <view class="classifyItem">
+        <image src="../../img/coat.png"></image>
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y="true" class="goodsbox">
+      <view  wx:for="{{goodslist}}">
+        <view class="goodlist" bindtap="toDetail" data-goodsID="{{item.goodsID}}">
+           <image src="{{item.goodsListImg}}"></image>
+            <text class="goodname">{{item.goodsName}}</text>
+            <text class="goodpri">
+                <text class="newpri">￥{{item.discount==0?item.price:item.price*item.discount/10}}</text>
+                <text class="oldpri">￥{{item.price}}</text>
+            </text>
+        </view>
+      </view>
+    </scroll-view>
+</view>
